@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<jade_config>
+  <application schema="ErewhonInvestmentsODBC" name="OdbcServer">
+    <odbc_config>
+      <listen_host_name>localhost</listen_host_name>
+      <listen_port_number>65434</listen_port_number>
+      <listen_protocol_family>TcpIPv4</listen_protocol_family>
+      <minimum_workers>2</minimum_workers>
+      <maximum_workers>5</maximum_workers>
+      <read_timeout>0</read_timeout>
+      <queue_depth_limit>1</queue_depth_limit>
+      <queue_depth_limit_timeout>2</queue_depth_limit_timeout>
+      <worker_idle_timeout>120</worker_idle_timeout>
+    </odbc_config>
+  </application>
+</jade_config>

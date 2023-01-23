@@ -1,0 +1,2352 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<schema name="ErewhonInvestmentsODBC" JadeVersionNumber="99.0.00" CompleteDefinition="true">
+
+	<RelationalView name="ErewhonOdbc">
+		<_modifiedBy>cnwhm6</_modifiedBy>
+		<_modifiedTimestamp>2023:01:18:16:16:59.594</_modifiedTimestamp>
+		<_patchVersion>0</_patchVersion>
+		<_systemVersion>99.0.00</_systemVersion>
+		<creator>cnwhm6</creator>
+		<defaultVisibility>0</defaultVisibility>
+		<includeSystemClasses>true</includeSystemClasses>
+		<name>ErewhonOdbc</name>
+		<resyncOnExecute>false</resyncOnExecute>
+		<rootClass>Company</rootClass>
+		<schema name="ErewhonInvestmentsODBC" />
+		<securityMethod/>
+		<timeCreated>2023:01:18:16:16:59.543</timeCreated>
+		<uuid/>
+		<includedObjectFeatures>
+		</includedObjectFeatures>
+		<tables>
+			<RelationalTableClass name='Agent' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>Agent</firstClassName>
+				<name>Agent</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="Agent" />
+					</RAMethod>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Agent" />
+					</RAProperty>
+					<RAProperty name="name" >
+						<attrName>name</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>81</length>
+						<name>name</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="Agent" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>Agent</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Agent" />
+					</RAOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableRelationship name='Agent_allCommissionRates' >
+				<firstClassName>Agent</firstClassName>
+				<firstPropertyName>allCommissionRates</firstPropertyName>
+				<name>Agent_allCommissionRates</name>
+				<rView name="ErewhonOdbc" />
+				<secondClassName>CommissionRate</secondClassName>
+				<uuid/>
+				<attributes>
+					<RARelationOid name="agent_oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<fromFirstClass>true</fromFirstClass>
+						<length>28</length>
+						<name>agent_oid</name>
+						<referencedClassName>Agent</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Agent_allCommissionRates" />
+					</RARelationOid>
+					<RARelationOid name="commissionRate_oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<fromFirstClass>false</fromFirstClass>
+						<length>28</length>
+						<name>commissionRate_oid</name>
+						<referencedClassName>CommissionRate</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Agent_allCommissionRates" />
+					</RARelationOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableRelationship>
+			<RelationalTableClass name='Client' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>Client</firstClassName>
+				<name>Client</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="Client" />
+					</RAMethod>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Client" />
+					</RAProperty>
+					<RAProperty name="name" >
+						<attrName>name</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>81</length>
+						<name>name</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="Client" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>Client</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Client" />
+					</RAOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='CommissionRate' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>CommissionRate</firstClassName>
+				<name>CommissionRate</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="display" >
+						<attrName>display</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>display</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="CommissionRate" />
+					</RAMethod>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="CommissionRate" />
+					</RAMethod>
+					<RAProperty name="mySaleItemCategory" >
+						<attrName>mySaleItemCategory</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySaleItemCategory</name>
+						<referencedClassName>SaleItemCategory</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="CommissionRate" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>CommissionRate</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="CommissionRate" />
+					</RAOid>
+					<RAProperty name="percentage" >
+						<attrName>percentage</attrName>
+						<decimals>2</decimals>
+						<feature/>
+						<length>5</length>
+						<name>percentage</name>
+						<referencedClassName>Decimal</referencedClassName>
+						<sqlType>3</sqlType>
+						<table name="CommissionRate" />
+					</RAProperty>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableRelationship name='CommissionRate_allAgents' >
+				<firstClassName>CommissionRate</firstClassName>
+				<firstPropertyName>allAgents</firstPropertyName>
+				<name>CommissionRate_allAgents</name>
+				<rView name="ErewhonOdbc" />
+				<secondClassName>Agent</secondClassName>
+				<uuid/>
+				<attributes>
+					<RARelationOid name="agent_oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<fromFirstClass>false</fromFirstClass>
+						<length>28</length>
+						<name>agent_oid</name>
+						<referencedClassName>Agent</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="CommissionRate_allAgents" />
+					</RARelationOid>
+					<RARelationOid name="commissionRate_oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<fromFirstClass>true</fromFirstClass>
+						<length>28</length>
+						<name>commissionRate_oid</name>
+						<referencedClassName>CommissionRate</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="CommissionRate_allAgents" />
+					</RARelationOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableRelationship>
+			<RelationalTableClass name='Company' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>Company</firstClassName>
+				<name>Company</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="Company" />
+					</RAMethod>
+					<RAMethod name="getNumberOfLocations" >
+						<attrName>getNumberOfLocations</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getNumberOfLocations</name>
+						<referencedClassName/>
+						<sqlType>4</sqlType>
+						<table name="Company" />
+					</RAMethod>
+					<RAProperty name="name" >
+						<attrName>name</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>81</length>
+						<name>name</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="Company" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Company" />
+					</RAOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableCollectionMeth name='Company_getSaleItemsByRegionByCost' >
+				<collectionType>-50</collectionType>
+				<firstClassName>Company</firstClassName>
+				<methodName>getSaleItemsByRegionByCost</methodName>
+				<name>Company_getSaleItemsByRegionByCost</name>
+				<rView name="ErewhonOdbc" />
+				<secondClassName>SaleItem</secondClassName>
+				<uuid/>
+				<attributes>
+					<RARelationOid name="company_oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<fromFirstClass>true</fromFirstClass>
+						<length>28</length>
+						<name>company_oid</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Company_getSaleItemsByRegionByCost" />
+					</RARelationOid>
+					<RAParameter name="maxPrice" >
+						<attrName>maxPrice</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>23</length>
+						<name>maxPrice</name>
+						<referencedClassName>Decimal</referencedClassName>
+						<sqlType>3</sqlType>
+						<table name="Company_getSaleItemsByRegionByCost" />
+					</RAParameter>
+					<RAParameter name="minPrice" >
+						<attrName>minPrice</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>23</length>
+						<name>minPrice</name>
+						<referencedClassName>Decimal</referencedClassName>
+						<sqlType>3</sqlType>
+						<table name="Company_getSaleItemsByRegionByCost" />
+					</RAParameter>
+					<RAParameter name="regionName" >
+						<attrName>regionName</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>regionName</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>-1</sqlType>
+						<table name="Company_getSaleItemsByRegionByCost" />
+					</RAParameter>
+					<RARelationOid name="saleItem_oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<fromFirstClass>false</fromFirstClass>
+						<length>28</length>
+						<name>saleItem_oid</name>
+						<referencedClassName>SaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Company_getSaleItemsByRegionByCost" />
+					</RARelationOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableCollectionMeth>
+			<RelationalTableClass name='Country' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>Country</firstClassName>
+				<name>Country</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="Country" />
+					</RAMethod>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Country" />
+					</RAProperty>
+					<RAProperty name="name" >
+						<attrName>name</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>81</length>
+						<name>name</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="Country" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>Country</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Country" />
+					</RAOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='Location' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>Location</firstClassName>
+				<name>Location</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="Location" />
+					</RAMethod>
+					<RAProperty name="name" >
+						<attrName>name</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>81</length>
+						<name>name</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="Location" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>Location</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Location" />
+					</RAOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='Region' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>Region</firstClassName>
+				<name>Region</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="Region" />
+					</RAMethod>
+					<RAProperty name="myCountry" >
+						<attrName>myCountry</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCountry</name>
+						<referencedClassName>Country</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Region" />
+					</RAProperty>
+					<RAProperty name="name" >
+						<attrName>name</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>81</length>
+						<name>name</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="Region" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>Region</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Region" />
+					</RAOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='RetailSale' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>RetailSale</firstClassName>
+				<name>RetailSale</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="display" >
+						<attrName>display</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>display</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="RetailSale" />
+					</RAMethod>
+					<RAMethod name="getAmount" >
+						<attrName>getAmount</attrName>
+						<decimals>23</decimals>
+						<feature/>
+						<length>46</length>
+						<name>getAmount</name>
+						<referencedClassName/>
+						<sqlType>3</sqlType>
+						<table name="RetailSale" />
+					</RAMethod>
+					<RAMethod name="getDate" >
+						<attrName>getDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getDate</name>
+						<referencedClassName/>
+						<sqlType>9</sqlType>
+						<table name="RetailSale" />
+					</RAMethod>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="RetailSale" />
+					</RAMethod>
+					<RAProperty name="myClient" >
+						<attrName>myClient</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myClient</name>
+						<referencedClassName>Client</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="RetailSale" />
+					</RAProperty>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="RetailSale" />
+					</RAProperty>
+					<RAProperty name="mySaleItem" >
+						<attrName>mySaleItem</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySaleItem</name>
+						<referencedClassName>SaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="RetailSale" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>RetailSale</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="RetailSale" />
+					</RAOid>
+					<RAProperty name="price" >
+						<attrName>price</attrName>
+						<decimals>2</decimals>
+						<feature/>
+						<length>12</length>
+						<name>price</name>
+						<referencedClassName>Decimal</referencedClassName>
+						<sqlType>3</sqlType>
+						<table name="RetailSale" />
+					</RAProperty>
+					<RAProperty name="timeStamp" >
+						<attrName>timeStamp</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>8</length>
+						<name>timeStamp</name>
+						<referencedClassName>TimeStamp</referencedClassName>
+						<sqlType>11</sqlType>
+						<table name="RetailSale" />
+					</RAProperty>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='RetailSaleItem' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>RetailSaleItem</firstClassName>
+				<name>RetailSaleItem</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAProperty name="codeNumber" >
+						<attrName>codeNumber</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>codeNumber</name>
+						<referencedClassName>Integer</referencedClassName>
+						<sqlType>4</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAProperty name="codePrefix" >
+						<attrName>codePrefix</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>5</length>
+						<name>codePrefix</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAMethod name="display" >
+						<attrName>display</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>display</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="RetailSaleItem" />
+					</RAMethod>
+					<RAProperty name="forSaleDate" >
+						<attrName>forSaleDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>forSaleDate</name>
+						<referencedClassName>Date</referencedClassName>
+						<sqlType>9</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAProperty name="fullDescription" >
+						<attrName>fullDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>fullDescription</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>-1</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAMethod name="getCode" >
+						<attrName>getCode</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getCode</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="RetailSaleItem" />
+					</RAMethod>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="RetailSaleItem" />
+					</RAMethod>
+					<RAMethod name="getPrice" >
+						<attrName>getPrice</attrName>
+						<decimals>23</decimals>
+						<feature/>
+						<length>46</length>
+						<name>getPrice</name>
+						<referencedClassName/>
+						<sqlType>3</sqlType>
+						<table name="RetailSaleItem" />
+					</RAMethod>
+					<RAMethod name="getTypeString" >
+						<attrName>getTypeString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getTypeString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="RetailSaleItem" />
+					</RAMethod>
+					<RAProperty name="myAgent" >
+						<attrName>myAgent</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myAgent</name>
+						<referencedClassName>Agent</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAProperty name="myRegion" >
+						<attrName>myRegion</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myRegion</name>
+						<referencedClassName>Region</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAProperty name="mySale" >
+						<attrName>mySale</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySale</name>
+						<referencedClassName>Sale</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAProperty name="mySaleItemCategory" >
+						<attrName>mySaleItemCategory</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySaleItemCategory</name>
+						<referencedClassName>SaleItemCategory</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>RetailSaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="RetailSaleItem" />
+					</RAOid>
+					<RAProperty name="photo" >
+						<attrName>photo</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>photo</name>
+						<referencedClassName>Binary</referencedClassName>
+						<sqlType>-4</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAProperty name="price" >
+						<attrName>price</attrName>
+						<decimals>2</decimals>
+						<feature/>
+						<length>12</length>
+						<name>price</name>
+						<referencedClassName>Decimal</referencedClassName>
+						<sqlType>3</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+					<RAProperty name="shortDescription" >
+						<attrName>shortDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>31</length>
+						<name>shortDescription</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="RetailSaleItem" />
+					</RAProperty>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='Sale' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>Sale</firstClassName>
+				<name>Sale</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="getAmount" >
+						<attrName>getAmount</attrName>
+						<decimals>23</decimals>
+						<feature/>
+						<length>46</length>
+						<name>getAmount</name>
+						<referencedClassName/>
+						<sqlType>3</sqlType>
+						<table name="Sale" />
+					</RAMethod>
+					<RAMethod name="getDate" >
+						<attrName>getDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getDate</name>
+						<referencedClassName/>
+						<sqlType>9</sqlType>
+						<table name="Sale" />
+					</RAMethod>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="Sale" />
+					</RAMethod>
+					<RAMethod name="getTime" >
+						<attrName>getTime</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getTime</name>
+						<referencedClassName/>
+						<sqlType>10</sqlType>
+						<table name="Sale" />
+					</RAMethod>
+					<RAProperty name="myClient" >
+						<attrName>myClient</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myClient</name>
+						<referencedClassName>Client</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Sale" />
+					</RAProperty>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Sale" />
+					</RAProperty>
+					<RAProperty name="mySaleItem" >
+						<attrName>mySaleItem</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySaleItem</name>
+						<referencedClassName>SaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Sale" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>Sale</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Sale" />
+					</RAOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='SaleItem' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>SaleItem</firstClassName>
+				<name>SaleItem</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAProperty name="codeNumber" >
+						<attrName>codeNumber</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>codeNumber</name>
+						<referencedClassName>Integer</referencedClassName>
+						<sqlType>4</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="codePrefix" >
+						<attrName>codePrefix</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>5</length>
+						<name>codePrefix</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="forSaleDate" >
+						<attrName>forSaleDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>forSaleDate</name>
+						<referencedClassName>Date</referencedClassName>
+						<sqlType>9</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="fullDescription" >
+						<attrName>fullDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>fullDescription</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAMethod name="getCode" >
+						<attrName>getCode</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getCode</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getMySaleStatus" >
+						<attrName>getMySaleStatus</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getMySaleStatus</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getPrice" >
+						<attrName>getPrice</attrName>
+						<decimals>23</decimals>
+						<feature/>
+						<length>46</length>
+						<name>getPrice</name>
+						<referencedClassName/>
+						<sqlType>3</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getTypeString" >
+						<attrName>getTypeString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getTypeString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAProperty name="myAgent" >
+						<attrName>myAgent</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myAgent</name>
+						<referencedClassName>Agent</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="myRegion" >
+						<attrName>myRegion</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myRegion</name>
+						<referencedClassName>Region</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="mySale" >
+						<attrName>mySale</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySale</name>
+						<referencedClassName>Sale</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="mySaleItemCategory" >
+						<attrName>mySaleItemCategory</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySaleItemCategory</name>
+						<referencedClassName>SaleItemCategory</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>SaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAOid>
+					<RAProperty name="photo" >
+						<attrName>photo</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>photo</name>
+						<referencedClassName>Binary</referencedClassName>
+						<sqlType>-4</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="shortDescription" >
+						<attrName>shortDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>31</length>
+						<name>shortDescription</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='SaleItemCategory' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>SaleItemCategory</firstClassName>
+				<name>SaleItemCategory</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAProperty name="description" >
+						<attrName>description</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>description</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>-1</sqlType>
+						<table name="SaleItemCategory" />
+					</RAProperty>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItemCategory" />
+					</RAMethod>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItemCategory" />
+					</RAProperty>
+					<RAProperty name="name" >
+						<attrName>name</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>41</length>
+						<name>name</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="SaleItemCategory" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>SaleItemCategory</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItemCategory" />
+					</RAOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='Tender' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>Tender</firstClassName>
+				<name>Tender</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="display" >
+						<attrName>display</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>display</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="Tender" />
+					</RAMethod>
+					<RAMethod name="getDate" >
+						<attrName>getDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getDate</name>
+						<referencedClassName/>
+						<sqlType>9</sqlType>
+						<table name="Tender" />
+					</RAMethod>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="Tender" />
+					</RAMethod>
+					<RAMethod name="getTime" >
+						<attrName>getTime</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getTime</name>
+						<referencedClassName/>
+						<sqlType>10</sqlType>
+						<table name="Tender" />
+					</RAMethod>
+					<RAProperty name="myClient" >
+						<attrName>myClient</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myClient</name>
+						<referencedClassName>Client</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Tender" />
+					</RAProperty>
+					<RAProperty name="myTenderSale" >
+						<attrName>myTenderSale</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myTenderSale</name>
+						<referencedClassName>TenderSale</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Tender" />
+					</RAProperty>
+					<RAProperty name="myTenderSaleItem" >
+						<attrName>myTenderSaleItem</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myTenderSaleItem</name>
+						<referencedClassName>TenderSaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Tender" />
+					</RAProperty>
+					<RAProperty name="offer" >
+						<attrName>offer</attrName>
+						<decimals>2</decimals>
+						<feature/>
+						<length>12</length>
+						<name>offer</name>
+						<referencedClassName>Decimal</referencedClassName>
+						<sqlType>3</sqlType>
+						<table name="Tender" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>Tender</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Tender" />
+					</RAOid>
+					<RAProperty name="timeStamp" >
+						<attrName>timeStamp</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>8</length>
+						<name>timeStamp</name>
+						<referencedClassName>TimeStamp</referencedClassName>
+						<sqlType>11</sqlType>
+						<table name="Tender" />
+					</RAProperty>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='TenderSale' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>TenderSale</firstClassName>
+				<name>TenderSale</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="display" >
+						<attrName>display</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>display</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSale" />
+					</RAMethod>
+					<RAMethod name="getAmount" >
+						<attrName>getAmount</attrName>
+						<decimals>23</decimals>
+						<feature/>
+						<length>46</length>
+						<name>getAmount</name>
+						<referencedClassName/>
+						<sqlType>3</sqlType>
+						<table name="TenderSale" />
+					</RAMethod>
+					<RAMethod name="getDate" >
+						<attrName>getDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getDate</name>
+						<referencedClassName/>
+						<sqlType>9</sqlType>
+						<table name="TenderSale" />
+					</RAMethod>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSale" />
+					</RAMethod>
+					<RAMethod name="getTime" >
+						<attrName>getTime</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getTime</name>
+						<referencedClassName/>
+						<sqlType>10</sqlType>
+						<table name="TenderSale" />
+					</RAMethod>
+					<RAProperty name="myClient" >
+						<attrName>myClient</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myClient</name>
+						<referencedClassName>Client</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSale" />
+					</RAProperty>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSale" />
+					</RAProperty>
+					<RAProperty name="mySaleItem" >
+						<attrName>mySaleItem</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySaleItem</name>
+						<referencedClassName>SaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSale" />
+					</RAProperty>
+					<RAProperty name="myTender" >
+						<attrName>myTender</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myTender</name>
+						<referencedClassName>Tender</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSale" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>TenderSale</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSale" />
+					</RAOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='TenderSaleItem' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>TenderSaleItem</firstClassName>
+				<name>TenderSaleItem</name>
+				<rView name="ErewhonOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="acceptHighestTender" >
+						<attrName>acceptHighestTender</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>acceptHighestTender</name>
+						<referencedClassName/>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAProperty name="closureDate" >
+						<attrName>closureDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>closureDate</name>
+						<referencedClassName>Date</referencedClassName>
+						<sqlType>9</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="codeNumber" >
+						<attrName>codeNumber</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>codeNumber</name>
+						<referencedClassName>Integer</referencedClassName>
+						<sqlType>4</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="codePrefix" >
+						<attrName>codePrefix</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>5</length>
+						<name>codePrefix</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAMethod name="display" >
+						<attrName>display</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>display</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAProperty name="forSaleDate" >
+						<attrName>forSaleDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>forSaleDate</name>
+						<referencedClassName>Date</referencedClassName>
+						<sqlType>9</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="fullDescription" >
+						<attrName>fullDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>fullDescription</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAMethod name="getCode" >
+						<attrName>getCode</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getCode</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getMySaleStatus" >
+						<attrName>getMySaleStatus</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getMySaleStatus</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getPrice" >
+						<attrName>getPrice</attrName>
+						<decimals>23</decimals>
+						<feature/>
+						<length>46</length>
+						<name>getPrice</name>
+						<referencedClassName/>
+						<sqlType>3</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getTypeString" >
+						<attrName>getTypeString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getTypeString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAProperty name="myAgent" >
+						<attrName>myAgent</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myAgent</name>
+						<referencedClassName>Agent</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="myRegion" >
+						<attrName>myRegion</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myRegion</name>
+						<referencedClassName>Region</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="mySale" >
+						<attrName>mySale</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySale</name>
+						<referencedClassName>Sale</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="mySaleItemCategory" >
+						<attrName>mySaleItemCategory</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySaleItemCategory</name>
+						<referencedClassName>SaleItemCategory</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>TenderSaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAOid>
+					<RAProperty name="photo" >
+						<attrName>photo</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>photo</name>
+						<referencedClassName>Binary</referencedClassName>
+						<sqlType>-4</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="shortDescription" >
+						<attrName>shortDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>31</length>
+						<name>shortDescription</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+		</tables>
+	</RelationalView>
+	<RelationalView name="SoftEntitiesOdbc">
+		<_modifiedBy>cnwhm6</_modifiedBy>
+		<_modifiedTimestamp>2023:01:18:16:16:17.929</_modifiedTimestamp>
+		<_patchVersion>0</_patchVersion>
+		<_systemVersion>99.0.00</_systemVersion>
+		<creator>cnwhm6</creator>
+		<defaultVisibility>0</defaultVisibility>
+		<includeSystemClasses>false</includeSystemClasses>
+		<name>SoftEntitiesOdbc</name>
+		<resyncOnExecute>false</resyncOnExecute>
+		<rootClass>Company</rootClass>
+		<schema name="ErewhonInvestmentsODBC" />
+		<securityMethod/>
+		<timeCreated>2023:01:18:16:16:17.881</timeCreated>
+		<uuid/>
+		<includedObjectFeatures>
+		</includedObjectFeatures>
+		<tables>
+			<RelationalTableClass name='Company' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>Company</firstClassName>
+				<name>Company</name>
+				<rView name="SoftEntitiesOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="Company" />
+					</RAMethod>
+					<RAMethod name="getNumberOfLocations" >
+						<attrName>getNumberOfLocations</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getNumberOfLocations</name>
+						<referencedClassName/>
+						<sqlType>4</sqlType>
+						<table name="Company" />
+					</RAMethod>
+					<RAProperty name="name" >
+						<attrName>name</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>81</length>
+						<name>name</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="Company" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Company" />
+					</RAOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableCollectionMeth name='Company_getSaleItemsByRegionByCost' >
+				<collectionType>-50</collectionType>
+				<firstClassName>Company</firstClassName>
+				<methodName>getSaleItemsByRegionByCost</methodName>
+				<name>Company_getSaleItemsByRegionByCost</name>
+				<rView name="SoftEntitiesOdbc" />
+				<secondClassName>SaleItem</secondClassName>
+				<uuid/>
+				<attributes>
+					<RARelationOid name="company_oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<fromFirstClass>true</fromFirstClass>
+						<length>28</length>
+						<name>company_oid</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Company_getSaleItemsByRegionByCost" />
+					</RARelationOid>
+					<RAParameter name="maxPrice" >
+						<attrName>maxPrice</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>23</length>
+						<name>maxPrice</name>
+						<referencedClassName>Decimal</referencedClassName>
+						<sqlType>3</sqlType>
+						<table name="Company_getSaleItemsByRegionByCost" />
+					</RAParameter>
+					<RAParameter name="minPrice" >
+						<attrName>minPrice</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>23</length>
+						<name>minPrice</name>
+						<referencedClassName>Decimal</referencedClassName>
+						<sqlType>3</sqlType>
+						<table name="Company_getSaleItemsByRegionByCost" />
+					</RAParameter>
+					<RAParameter name="regionName" >
+						<attrName>regionName</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>regionName</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>-1</sqlType>
+						<table name="Company_getSaleItemsByRegionByCost" />
+					</RAParameter>
+					<RARelationOid name="saleItem_oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<fromFirstClass>false</fromFirstClass>
+						<length>28</length>
+						<name>saleItem_oid</name>
+						<referencedClassName>SaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="Company_getSaleItemsByRegionByCost" />
+					</RARelationOid>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableCollectionMeth>
+			<RelationalTableClass name='SaleItem' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>SaleItem</firstClassName>
+				<name>SaleItem</name>
+				<rView name="SoftEntitiesOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAProperty name="codeNumber" >
+						<attrName>codeNumber</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>codeNumber</name>
+						<referencedClassName>Integer</referencedClassName>
+						<sqlType>4</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="codePrefix" >
+						<attrName>codePrefix</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>5</length>
+						<name>codePrefix</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="forSaleDate" >
+						<attrName>forSaleDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>forSaleDate</name>
+						<referencedClassName>Date</referencedClassName>
+						<sqlType>9</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="fullDescription" >
+						<attrName>fullDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>fullDescription</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAMethod name="getCode" >
+						<attrName>getCode</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getCode</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getCodeNumber" >
+						<attrName>getCodeNumber</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getCodeNumber</name>
+						<referencedClassName/>
+						<sqlType>4</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getCodePrefix" >
+						<attrName>getCodePrefix</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getCodePrefix</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getMySaleStatus" >
+						<attrName>getMySaleStatus</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getMySaleStatus</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getPrice" >
+						<attrName>getPrice</attrName>
+						<decimals>23</decimals>
+						<feature/>
+						<length>46</length>
+						<name>getPrice</name>
+						<referencedClassName/>
+						<sqlType>3</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getSale" >
+						<attrName>getSale</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>getSale</name>
+						<referencedClassName/>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getShortDescription" >
+						<attrName>getShortDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getShortDescription</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="getTypeString" >
+						<attrName>getTypeString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getTypeString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAMethod name="isSold" >
+						<attrName>isSold</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>1</length>
+						<name>isSold</name>
+						<referencedClassName/>
+						<sqlType>-7</sqlType>
+						<table name="SaleItem" />
+					</RAMethod>
+					<RAProperty name="myAgent" >
+						<attrName>myAgent</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myAgent</name>
+						<referencedClassName>Agent</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="myRegion" >
+						<attrName>myRegion</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myRegion</name>
+						<referencedClassName>Region</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="mySale" >
+						<attrName>mySale</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySale</name>
+						<referencedClassName>Sale</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="mySaleItemCategory" >
+						<attrName>mySaleItemCategory</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySaleItemCategory</name>
+						<referencedClassName>SaleItemCategory</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>SaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="SaleItem" />
+					</RAOid>
+					<RAProperty name="photo" >
+						<attrName>photo</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>photo</name>
+						<referencedClassName>Binary</referencedClassName>
+						<sqlType>-4</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="price" >
+						<attrName>price</attrName>
+						<decimals>2</decimals>
+						<feature/>
+						<length>12</length>
+						<name>price</name>
+						<referencedClassName>Decimal</referencedClassName>
+						<sqlType>3</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+					<RAProperty name="shortDescription" >
+						<attrName>shortDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>31</length>
+						<name>shortDescription</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="SaleItem" />
+					</RAProperty>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+			<RelationalTableClass name='TenderSaleItem' >
+				<bCallIFAllInstances>false</bCallIFAllInstances>
+				<firstClassName>TenderSaleItem</firstClassName>
+				<name>TenderSaleItem</name>
+				<rView name="SoftEntitiesOdbc" />
+				<rootCollectionName/>
+				<uuid/>
+				<attributes>
+					<RAMethod name="acceptHighestTender" >
+						<attrName>acceptHighestTender</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>acceptHighestTender</name>
+						<referencedClassName/>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAProperty name="closureDate" >
+						<attrName>closureDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>closureDate</name>
+						<referencedClassName>Date</referencedClassName>
+						<sqlType>9</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="codeNumber" >
+						<attrName>codeNumber</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>codeNumber</name>
+						<referencedClassName>Integer</referencedClassName>
+						<sqlType>4</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="codePrefix" >
+						<attrName>codePrefix</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>5</length>
+						<name>codePrefix</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="forSaleDate" >
+						<attrName>forSaleDate</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>forSaleDate</name>
+						<referencedClassName>Date</referencedClassName>
+						<sqlType>9</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="fullDescription" >
+						<attrName>fullDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>fullDescription</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAMethod name="getCode" >
+						<attrName>getCode</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getCode</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getCodeNumber" >
+						<attrName>getCodeNumber</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>4</length>
+						<name>getCodeNumber</name>
+						<referencedClassName/>
+						<sqlType>4</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getCodePrefix" >
+						<attrName>getCodePrefix</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getCodePrefix</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getDebugString" >
+						<attrName>getDebugString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getDebugString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getMySaleStatus" >
+						<attrName>getMySaleStatus</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getMySaleStatus</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getPrice" >
+						<attrName>getPrice</attrName>
+						<decimals>23</decimals>
+						<feature/>
+						<length>46</length>
+						<name>getPrice</name>
+						<referencedClassName/>
+						<sqlType>3</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getSale" >
+						<attrName>getSale</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>getSale</name>
+						<referencedClassName/>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getShortDescription" >
+						<attrName>getShortDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getShortDescription</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="getTypeString" >
+						<attrName>getTypeString</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>getTypeString</name>
+						<referencedClassName/>
+						<sqlType>-1</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAMethod name="isSold" >
+						<attrName>isSold</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>1</length>
+						<name>isSold</name>
+						<referencedClassName/>
+						<sqlType>-7</sqlType>
+						<table name="TenderSaleItem" />
+					</RAMethod>
+					<RAProperty name="myAgent" >
+						<attrName>myAgent</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myAgent</name>
+						<referencedClassName>Agent</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="myCompany" >
+						<attrName>myCompany</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myCompany</name>
+						<referencedClassName>Company</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="myRegion" >
+						<attrName>myRegion</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>myRegion</name>
+						<referencedClassName>Region</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="mySale" >
+						<attrName>mySale</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySale</name>
+						<referencedClassName>Sale</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="mySaleItemCategory" >
+						<attrName>mySaleItemCategory</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>mySaleItemCategory</name>
+						<referencedClassName>SaleItemCategory</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAOid name="oid" >
+						<attrName>oid</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>28</length>
+						<name>oid</name>
+						<referencedClassName>TenderSaleItem</referencedClassName>
+						<sqlType>-50</sqlType>
+						<table name="TenderSaleItem" />
+					</RAOid>
+					<RAProperty name="photo" >
+						<attrName>photo</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>2147483647</length>
+						<name>photo</name>
+						<referencedClassName>Binary</referencedClassName>
+						<sqlType>-4</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="price" >
+						<attrName>price</attrName>
+						<decimals>2</decimals>
+						<feature/>
+						<length>12</length>
+						<name>price</name>
+						<referencedClassName>Decimal</referencedClassName>
+						<sqlType>3</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+					<RAProperty name="shortDescription" >
+						<attrName>shortDescription</attrName>
+						<decimals>0</decimals>
+						<feature/>
+						<length>31</length>
+						<name>shortDescription</name>
+						<referencedClassName>String</referencedClassName>
+						<sqlType>12</sqlType>
+						<table name="TenderSaleItem" />
+					</RAProperty>
+				</attributes>
+				<classes>
+				</classes>
+			</RelationalTableClass>
+		</tables>
+	</RelationalView>
+	<Application name="ErewhonInvestmentsODBC">
+		<__overridePatchNumber>0</__overridePatchNumber>
+		<__patchControlString/>
+		<_aboutFormName/>
+		<_defaultLocaleId>0</_defaultLocaleId>
+		<_modifiedBy>cnwclh1</_modifiedBy>
+		<_modifiedTimestamp>2009:08:18:11:36:17.593</_modifiedTimestamp>
+		<_patchVersion>0</_patchVersion>
+		<_startupFormName/>
+		<_systemVersion>6.3.04</_systemVersion>
+		<aboutForm/>
+		<appVersion/>
+		<applicationType>G</applicationType>
+		<controlSpacing>4</controlSpacing>
+		<defaultApp>true</defaultApp>
+		<defaultMdi>false</defaultMdi>
+		<finalizeMethod/>
+		<fontBold>false</fontBold>
+		<fontName>MS Sans Serif</fontName>
+		<fontSize>8.25</fontSize>
+		<formMargin>7</formMargin>
+		<heightSingleLineControl>14</heightSingleLineControl>
+		<helpFile/>
+		<icon/>
+		<initializeMethod/>
+		<mdiStyle>0</mdiStyle>
+		<mdiWindowListOrder>0</mdiWindowListOrder>
+		<name>ErewhonInvestmentsODBC</name>
+		<showBubbleHelp>false</showBubbleHelp>
+		<startupForm/>
+		<useBorderStyleOnly>false</useBorderStyleOnly>
+		<webMinimumResponseTime>0</webMinimumResponseTime>
+		<threeDControls>
+			<GUIClass name="GroupBox" />
+			<GUIClass name="OptionButton" />
+			<GUIClass name="CheckBox" />
+		</threeDControls>
+	</Application>
+	<Application name="OdbcNonGui">
+		<__overridePatchNumber>0</__overridePatchNumber>
+		<__patchControlString/>
+		<_aboutFormName/>
+		<_defaultLocaleId>0</_defaultLocaleId>
+		<_modifiedBy>cnwclh1</_modifiedBy>
+		<_modifiedTimestamp>2009:08:18:11:46:01.036</_modifiedTimestamp>
+		<_patchVersion>0</_patchVersion>
+		<_startupFormName/>
+		<_systemVersion>6.3.04</_systemVersion>
+		<aboutForm/>
+		<appVersion/>
+		<applicationType>S</applicationType>
+		<controlSpacing>4</controlSpacing>
+		<defaultApp>false</defaultApp>
+		<defaultMdi>false</defaultMdi>
+		<finalizeMethod/>
+		<fontBold>false</fontBold>
+		<fontName>MS Sans Serif</fontName>
+		<fontSize>8.25</fontSize>
+		<formMargin>7</formMargin>
+		<heightSingleLineControl>14</heightSingleLineControl>
+		<helpFile/>
+		<icon/>
+		<initializeMethod/>
+		<mdiStyle>0</mdiStyle>
+		<mdiWindowListOrder>0</mdiWindowListOrder>
+		<name>OdbcNonGui</name>
+		<showBubbleHelp>false</showBubbleHelp>
+		<startupForm/>
+		<useBorderStyleOnly>true</useBorderStyleOnly>
+		<webMinimumResponseTime>0</webMinimumResponseTime>
+		<threeDControls>
+			<GUIClass name="CheckBox" />
+			<GUIClass name="GroupBox" />
+			<GUIClass name="OptionButton" />
+		</threeDControls>
+	</Application>
+	<Application name="OdbcServer">
+		<__overridePatchNumber>0</__overridePatchNumber>
+		<__patchControlString/>
+		<_aboutFormName/>
+		<_defaultLocaleId>0</_defaultLocaleId>
+		<_modifiedBy>cnwclh1</_modifiedBy>
+		<_modifiedTimestamp>2009:08:18:14:37:45.626</_modifiedTimestamp>
+		<_patchVersion>0</_patchVersion>
+		<_startupFormName/>
+		<_systemVersion>6.3.04</_systemVersion>
+		<aboutForm/>
+		<appVersion/>
+		<applicationType>S</applicationType>
+		<controlSpacing>4</controlSpacing>
+		<defaultApp>false</defaultApp>
+		<defaultMdi>false</defaultMdi>
+		<finalizeMethod name="finalizeOdbcServer" />
+		<fontBold>false</fontBold>
+		<fontName>MS Sans Serif</fontName>
+		<fontSize>8.25</fontSize>
+		<formMargin>7</formMargin>
+		<heightSingleLineControl>14</heightSingleLineControl>
+		<helpFile/>
+		<icon/>
+		<initializeMethod name="initializeOdbcServer" />
+		<mdiStyle>0</mdiStyle>
+		<mdiWindowListOrder>0</mdiWindowListOrder>
+		<name>OdbcServer</name>
+		<showBubbleHelp>false</showBubbleHelp>
+		<startupForm/>
+		<useBorderStyleOnly>true</useBorderStyleOnly>
+		<webMinimumResponseTime>0</webMinimumResponseTime>
+		<threeDControls>
+			<GUIClass name="CheckBox" />
+			<GUIClass name="GroupBox" />
+			<GUIClass name="OptionButton" />
+		</threeDControls>
+	</Application>
+</schema>
